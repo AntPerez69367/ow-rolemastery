@@ -45,7 +45,7 @@
     opacity: 1;
   }
   .can-hover:hover {
-    opacity: 0.5;
+    filter: brightness(1.5);
   }
   .can-hover {
     opacity: 1;
