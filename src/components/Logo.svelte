@@ -1,17 +1,21 @@
 <script>
 </script>
 
-<div class="hero is-overlay is-clearfix">
-  <div class="hero-body">
-    <img
-      height="256"
-      width="256"
-      src="./images/ow_logo.png"
-      alt="Overwatch Logo"
-    />
-  </div>
-  <p class="title is-primary is-size-1">Overwatch RoleMastery</p>
+<div class="logo hero-body">
+  <img
+    class="mb-4"
+    height="256"
+    width="256"
+    src="./images/ow_logo.png"
+    alt="Overwatch Logo"
+  />
+  <pre
+    class="title is-primary has-text-weight-bold is-size-1">Overwatch Role Mastery</pre>
 </div>
 
 <style>
+  .logo {
+    top: -50%;
+    left: 0;
+  }
 </style>

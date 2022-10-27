@@ -40,7 +40,7 @@
               "is-danger": count < 10,
               "is-success": count >= 10,
             })}
-            value={count}
+            value={count ?? 0}
             max="10"
           />
         </div>
