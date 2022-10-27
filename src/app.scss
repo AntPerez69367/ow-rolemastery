@@ -1,3 +1,21 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */ /* Import only what you need from Bulma */
+
+@import "bulma/sass/utilities/_all";
+
+@import "bulma/sass/base/_all";
+
+@import "bulma/sass/elements/_all";
+
+@import "bulma/sass/form/_all";
+
+@import "bulma/sass/components/_all";
+
+@import "bulma/sass/grid/_all";
+
+@import "bulma/sass/helpers/_all";
+
+@import "bulma/sass/layout/_all";
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -13,6 +31,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --background: #f8f8f8;
+  --dark: #303032;
 }
 
 a {
@@ -30,6 +50,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #303032;
 }
 
 h1 {
@@ -55,7 +76,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -78,4 +99,13 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.overlay-card {
+  @include overlay(1.5rem);
+  display: flex;
+  border-radius: 0.25em;
+  color: white;
+  opacity: 0.9;
+  padding: 10%;
 }
