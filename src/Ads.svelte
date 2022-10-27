@@ -1,8 +1,4 @@
-<script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9921979478087755"
-  crossorigin="anonymous"
->
+<script>
   import { onMount } from "svelte";
 
   onMount(() => {
