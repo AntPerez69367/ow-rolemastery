@@ -22,13 +22,13 @@
 </script>
 
 <div class="container is-flex is-flex-direction-column is-align-self-center">
-  <Ads />
   <Logo />
   <div class="columns">
     <Card type="tank" handleClick={onClick} bind:count={$counts.tank} />
     <Card type="damage" handleClick={onClick} count={$counts.damage} />
     <Card type="support" handleClick={onClick} count={$counts.support} />
   </div>
+  <Ads />
 </div>
 
 <style>
