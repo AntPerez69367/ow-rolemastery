@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="logo hero-body">
+<div class="logo is-child hero-body">
   <img
     class="mb-4"
     height="256"

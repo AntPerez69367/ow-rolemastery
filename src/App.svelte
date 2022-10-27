@@ -1,5 +1,6 @@
 <script>
   import { counts } from "./stores/counts";
+  import Ads from "./Ads.svelte";
   import Card from "./components/Card.svelte";
   import Logo from "./components/Logo.svelte";
 
@@ -20,7 +21,8 @@
   };
 </script>
 
-<div class="container">
+<div class="container is-flex is-flex-direction-column is-align-self-center">
+  <Ads />
   <Logo />
   <div class="columns">
     <Card type="tank" handleClick={onClick} bind:count={$counts.tank} />
