@@ -15,36 +15,19 @@
       Reset
     </div>
     <img
-      class="is-child super-size is-unselectable"
+      class="is-child is-clickable is-rounded super-size can-hover is-unselectable"
       src="./images/{type}.png"
       alt="{type} Card"
-    />
-    <div
-      class="card-content has-text-weight-bold overlay-card"
       on:click={() => handleClick(type, false)}
       on:keypress={() => handleClick(type, false)}
-    >
-      <div class="control abs">
-        <div class="tags are-large has-addons is-unselectable">
-          <span class="is-dark tag">{count}</span>
-          <span
-            class={cx("tag", {
-              "is-danger": count < 10,
-              "is-success": count >= 10,
-            })}
-          >
-            Wins</span
-          >
-          <progress
-            class={cx("progress", {
-              "is-danger": count < 10,
-              "is-success": count >= 10,
-            })}
-            value={count ?? 0}
-            max="10"
-          />
-        </div>
-      </div>
+    />
+    <div class="card-content has-text-weight-bold">
+      <span
+        class={cx("rounded", "abs", "tag", "is-large", {
+          "is-danger": count < 10,
+          "is-success": count >= 10,
+        })}>{count}</span
+      >
     </div>
   </div>
 </div>
@@ -59,10 +42,18 @@
     aspect-ratio: 1/1;
     width: 75%;
     flex-grow: 1;
+    opacity: 1;
+  }
+  .can-hover:hover {
+    opacity: 0.5;
+  }
+  .can-hover {
+    opacity: 1;
   }
   .abs {
     position: absolute;
-    bottom: -40%;
-    right: 20%;
+    top: 70%;
+    right: 10%;
+    clip-path: circle(40%);
   }
 </style>
