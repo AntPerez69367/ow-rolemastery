@@ -8,7 +8,7 @@
 </script>
 
 <!-- Horizontal Ad -->
-<div class="ads-widget-container">
+<div class="ads-widget-container is-hidden-touch">
   <ins
     class="adsbygoogle"
     style="display:block"

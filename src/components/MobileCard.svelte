@@ -6,16 +6,9 @@
 </script>
 
 <div
-  class="is-hidden-touch is-flex is-flex-direction-column is-flex-grow-1 is-flex-shrink-1"
+  class="is-hidden-desktop is-flex is-flex-direction-column is-align-items-center is-flex-grow-1 is-flex-shrink-1"
 >
-  <div
-    class="button info is-fullwidth is-light"
-    on:click={() => handleClick(type, true)}
-    on:keypress={() => handleClick(type, true)}
-  >
-    Reset
-  </div>
-  <figure class="image is-1by1 is-flex is-flex-grow-1 is-flex-shrink-2">
+  <figure class="image is-128x128 is-flex is-flex-grow-1 is-flex-shrink-2">
     <img
       class="is-clickable p-4 can-hover is-align-self-center is-unselectable"
       src="./images/{type}.png"
@@ -23,6 +16,13 @@
       on:click={() => handleClick(type, false)}
       on:keypress={() => handleClick(type, false)}
     />
+    <div
+      class="button is-dark is-flex is-align-self-center"
+      on:click={() => handleClick(type, true)}
+      on:keypress={() => handleClick(type, true)}
+    >
+      Reset
+    </div>
     <span
       class={cx(
         "rounded",
