@@ -35,7 +35,6 @@
   <Card type="support" handleClick={onClick} count={$counts.support} />
   <MobileCard type="support" handleClick={onClick} count={$counts.support} />
 </div>
-<Ads />
 <Footer />
 
 <style>
