@@ -11,6 +11,5 @@ export const counts = writable(
 );
 
 counts.subscribe((value) => {
-  console.log(value);
   localStorage.counts = JSON.stringify(value);
 });
