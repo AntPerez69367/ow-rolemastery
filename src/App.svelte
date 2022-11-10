@@ -1,6 +1,5 @@
 <script>
   import { counts } from "./stores/counts";
-  import Ads from "./Ads.svelte";
   import Card from "./components/Card.svelte";
   import MobileCard from "./components/MobileCard.svelte";
 
