@@ -1,5 +1,6 @@
 <script>
   import { counts } from "./stores/counts";
+  import { MAX_COUNT } from "./constants";
   import Card from "./components/Card.svelte";
   import MobileCard from "./components/MobileCard.svelte";
 
@@ -15,7 +16,7 @@
       return;
     }
     counts.update((value) => {
-      if (value[type] < 10) {
+      if (value[type] < MAX_COUNT) {
         value[type] += 1;
       }
       return value;

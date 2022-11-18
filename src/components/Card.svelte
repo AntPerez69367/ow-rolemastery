@@ -1,5 +1,6 @@
 <script>
   import cx from "classnames";
+  import { MAX_COUNT } from "../constants";
   export let type;
   export let handleClick;
   export let count;
@@ -32,8 +33,8 @@
         "tag",
         "is-large",
         {
-          "is-danger": count < 10,
-          "is-success": count >= 10,
+          "is-danger": count < MAX_COUNT,
+          "is-success": count >= MAX_COUNT,
         }
       )}
     >
